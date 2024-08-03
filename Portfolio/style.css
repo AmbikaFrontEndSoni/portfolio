@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+i {
+  color: #22ddee;
+}
+.head_top {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.head_top_left_side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  gap: 20px;
+}
+.head_top_right_side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  gap: 10px;
+}
+.nav_icons {
+  color: #22ddee;
+  font-size: 12px;
+}
+.nav_right_icons {
+  color: #0c0d0d;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px 8px;
+}
+.menu_text {
+  color: black;
+}
+/* -------------------------------------------------header------------------------------------------------------------------ */
+
+.underline_link {
+  color: #22ddee;
+  position: relative;
+}
+.underline_link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  left: 0;
+  bottom: 0;
+  background-color: #2df3f3;
+  transition: 1s;
+}
+/* --------------------------home------------- */
+.content,
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: bisque; */
+  height: 80vh;
+}
+body {
+  background-color: #191a1a;
+}
+
+/* --------education------ */
+
+.education {
+  padding: 100px 0px;
+  /* margin: 50px 0px;
+  margin-left: 120px; */
+  background-color: rgba(88, 86, 88, 0.434);
+}
+
+.education hr {
+  color: #22ddee;
+  width: 400px;
+  margin: 10px auto;
+}
+.button_container .btn{
+   background-color: #22ddee;
+   padding: 5px 10px;
+   box-shadow: #55e6f3 0px 5px 15px;
+}
+.education h2,h3 {
+  font-weight: bold;
+
+  color: #55e6f3;
+}
+.edu_box {
+  box-shadow: #54cad5ca 0px 5px 15px;
+  margin-left: 200px;
+
+  /* color: #54cad5ca; */
+}
+
+/* ========================== */
+@media (max-width: 600px) {
+  .education {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .education h2 {
+    padding-top: 20px;
+  }
+  .education hr {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+}
