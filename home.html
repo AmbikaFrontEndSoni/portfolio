@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <title>Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- --------------------------------------------------------nav-start---------------------------------------- -->
+    <nav class="navbar navbar-expand-lg px-2 shadow p-3 bg-dark fixed-top mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h2 style="color: #86dcf2" class="fw-700"><span>Port</span>folio</h2>
+          <!-- <img src="img/logo.png" width="200px"  /> -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#home"
+                onclick="changeMenu(event)"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#AboutUs"
+                onclick="changeMenu(event)"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#projects"
+                onclick="changeMenu(event)"
+                >Projects</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#Contact"
+                onclick="changeMenu(event)"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ---------------------Home-start--------------------------- -->
+
+    <div class="container-fluid mt-5">
+      <div class="row home_container" id="home">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="content">
+            <div class="wrapper ">
+              <div class="static-txt">I'm a</div>
+              <!-- <ul class="dynamic-txts">
+                <li><span>FrontEnd Developer</span></li>
+                <li><span>BackEnd Developer</span></li>
+                <li><span>FullStack Developer</span></li>
+                <li><span>Web Developer</span></li>
+              </ul> -->
+              <div class="profile"><span>FrontEnd Developer</span> | <span>Web Developer</span></div>
+            </div>
+            <div class="button_container">
+              <button class="btn px-5 py-2">Resume</button>
+              <button class="btn px-5 py-2">
+                <a href="https://www.linkedin.com/in/ambika-soni-1996as11/"
+                 class="text-dark" style="text-decoration: none;">Hire me</a
+                >
+              </button>
+            </div>
+            <div class="icons_link mt-4">
+              <a href="https://ambikasoni1712@gmail.com">
+                <i
+                  class="fa-solid fa-envelope p-2 text-dark rounded"
+                  style="
+                    background-color: #86dcf2;
+                    box-shadow: #55e6f3 0px 2px 10px;
+                  "
+                ></i
+              ></a>
+              <a href="https://www.facebook.com">
+                <i
+                  class="fa-brands fa-facebook-f p-2 text-dark mx-2 rounded"
+                  style="
+                    background-color: #86dcf2;
+                    box-shadow: #55e6f3 0px 2px 10px;
+                  "
+                ></i
+              ></a>
+              <a href="https://www.linkedin.com/in/ambika-soni-1996as11/">
+                <i
+                  class="fa-brands fa-linkedin-in p-2 text-dark rounded mx-2"
+                  style="
+                    background-color: #86dcf2;
+                    box-shadow: #55e6f3 0px 2px 10px;
+                  "
+                ></i
+              ></a>
+              <a
+                href=" https://github.com/AmbikaFrontEndSoni/"
+                ><i
+                  class="fa-brands fa-github p-2 text-dark rounded"
+                  style="
+                    background-color: #86dcf2;
+                    box-shadow: #55e6f3 0px 2px 10px;
+                  "
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+          <div class="image">
+            <img src="Ambika_image_pro.png" class="my_img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------About section ------------- -->
+
+    <div class="container-fluid mt-5" id="AboutUs">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="image">
+            <img src="Ambika_image_pro.png" class="my_img" />
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="content">
+            <div class="heading">
+              <h2 class="text-center text-uppercase">About me</h2>
+              <hr />
+            </div>
+            <p class="text-light">
+              Hi,my name is Ambika soni. i have completed Msc in computer
+              science and i have also completed bsc and pgdca in computer . and
+              currently i am working in careinfosol company as a software
+              developer
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------------Education section ------------- -->
+
+    <div class="container education" id="Education">
+      <div>
+        <h2 class="text-center text-uppercase">Education Details</h2>
+        <hr />
+      </div>
+
+      <div class="mt-5 education_box">
+        <div class="text-light edu_box px-4 py-4">
+          <i class="fa-solid fa-graduation-cap fs-1" style="color: #55e6f3"></i>
+          <h3 class="">MSC(Computer Science)</h3>
+          <h6 class="">SSL Jain PG College Vidisha(MP), IN</h6>
+        </div>
+        <div class="text-light edu_box px-4 py-4">
+          <i class="fa-solid fa-graduation-cap fs-1" style="color: #55e6f3"></i>
+          <h3 class="">BSC(Computer Science)</h3>
+          <h6 class="">St. Mary PG College Vidisha(MP), IN</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------skills---------------- -->
+
+    <div class="container" id="Skill">
+      <div class="mt-5 heading">
+        <h2 class="text-center text-uppercase">Technologies Stack</h2>
+        <hr />
+        <p class="pb-3 text-center text-light">
+          including programming Languages, frameworks, databses, front-end and
+          back-end tools, and APIs
+        </p>
+      </div>
+      <div class="row mt-5 gap-5 justify-content-center">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+          <i class="fa-brands fa-html5 fs-1" style="color: #55e6f3"></i>
+          <h3 class="">HTML</h3>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+          <i class="fa-brands fa-css3 fs-1" style="color: #55e6f3"></i>
+          <h3 class="">CSS</h3>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+          <i class="fa-brands fa-bootstrap fs-1" style="color: #55e6f3"></i>
+          <h3 class="">Bootstrap</h3>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+          <i class="fa-brands fa-js fs-1" style="color: #55e6f3"></i>
+          <h3 class="">JavaScript</h3>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+          <i class="fa-brands fa-react fs-1" style="color: #55e6f3"></i>
+          <h3 class="">Reactjs</h3>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+          <i class="fa-brands fa-python fs-1" style="color: #55e6f3"></i>
+          <h3 class="">Core Python</h3>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+          <i class="fa-brands fa-node fs-1" style="color: #55e6f3"></i>
+          <h3 class="">Node Js</h3>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+          <i class="fa-solid fa-database fs-1" style="color: #55e6f3"></i>
+          <h3 class="">Mysql</h3>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+          <i class="fa-solid fa-database fs-1" style="color: #55e6f3"></i>
+          <h3 class="">Mongodb</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------Projects---------------- -->
+
+    <div class="container" id="projects">
+      <div class="mt-5 heading">
+        <h2 class="text-center text-uppercase">My Projects</h2>
+        <hr />
+        <p class="pb-3 text-center text-light">
+          including programming Languages, frameworks, databses, front-end and
+          back-end tools, and APIs
+        </p>
+      </div>
+      <div class="row mt-5 gap-5 justify-content-center">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box">
+          <a href="https://ambikafrontendsoni.github.io/Nature_Spa"
+            ><img
+              src="slider-banner-1.jpg"
+              
+              class="image-fluid" style="padding-top: 20px;"
+              alt="Nature spa" 
+          /></a>
+          <h3 class="">Nature spa</h3>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box ">
+          <a href="https://ambikafrontendsoni.github.io/aksharvilla"
+            ><img src="banner-01.jpg" alt="aksharvilla" style="height:185px; padding-top:20px ; width:100%;"
+          /></a>
+          <h3 class="">Aksharvilla</h3>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box ">
+          <a href="https://ambikafrontendsoni.github.io/react-project/"
+            ><img src="e-commerce-image.jfif" alt="e-commerce" style="padding-top: 20px; width:100%; height:185px;"
+          /></a>
+          <h3 class="">E-commerce</h3>
+        </div>
+        <!-- <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+          <a href="https://github.com/AmbikaFrontEndSoni/book-keeping-website"
+            ><img src="bg10.png" alt="Nature spa"
+          /></a>
+          <h3 class="">HTML</h3>
+        </div> -->
+        
+      </div>
+    </div>
+
+    <!-- ---------------------services---------------- -->
+
+    <div class="container mt-5 education" id="services">
+      <div class="mt-5 text-center text-light">
+        <h2 class="text-center text-uppercase text-light">Our Services</h2>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row mt-5 gap-5 justify-content-center">
+          <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+            <i class="fa-solid fa-code fs-1" style="color: #55e6f3"></i>
+            <h3 class="">Web Development</h3>
+            <p class="text-light">
+              I provide full-stack web development services to create dynamic
+              and responsive websites.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+            <i class="fa-solid fa-laptop-code fs-1" style="color: #55e6f3"></i>
+            <h3 class="">Front-End Development</h3>
+            <p class="text-light">
+              Specializing in building interactive and visually appealing
+              front-end interfaces using modern technologies.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+            <i class="fa-solid fa-database fs-1" style="color: #55e6f3"></i>
+            <h3 class="">Back-End Development</h3>
+            <p class="text-light">
+              Experienced in developing robust back-end systems and APIs to
+              support your web applications.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-light edu_box px-5 py-4">
+            <i class="fa-solid fa-code-branch fs-1" style="color: #55e6f3"></i>
+            <h3 class="">API Integration</h3>
+            <p class="text-light">
+              Providing seamless API integration services to connect your web
+              applications with various third-party services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------form------------------- -->
+    <div class="container mt-5 form" id="Contact">
+      <div class="mt-5 mb-4 heading">
+        <h2 class="text-center text-uppercase">Contact Form</h2>
+        <hr />
+      </div>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="row g-3 contact_form"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="c0c66128-f054-4064-bbda-88d308b13319"
+        />
+        <div class="col-lg-12 col-md-8 col-sm-12">
+          <label for="exampleInputEmail1" class="text-light form-label"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Your Name"
+            class="form-control transparent-input input_styles"
+            id="name"
+          />
+        </div>
+        <div class="col-lg-12 col-md-8 col-sm-12">
+          <label for="exampleInputEmail1" class="text-light" name="email"
+            >Email Address</label
+          >
+          <input
+            type="email"
+            placeholder="Your E-mail.."
+            class="form-control transparent-input input_styles"
+            id="email"
+          />
+        </div>
+        <div class="col-lg-12 col-md-8 col-sm-12">
+          <label for="exampleInputEmail1" class="form-label text-light"
+            >Message</label
+          >
+          <textarea
+            rows="5"
+            class="form-control transparent-input input_styles pt-0"
+            placeholder=" Your Message"
+            name="message"
+          ></textarea>
+        </div>
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+
+        <div class="col-lg-12 col-lg-6 col-md-8 col-sm-12">
+          <button
+            type="submit"
+            class="btn form_btn w-100 text-dark fw-bold p-1 fs-6"
+          >
+            Sign in
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- ------------------footer------------------------------- -->
+
+    <footer
+      class="container-fluid py-4 text-white text-center footer_content mt-5"
+      style="position: relative; background-color: rgb(41, 40, 40)"
+    >
+      <span class="footer_text">
+        Copyright @ 2024 Akshar Villa. All rights reserved.</span
+      >
+    </footer>
+    <!-- -------------------------links-------------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script>
+      function changeMenu(event) {
+        // Remove the underline_link class from all menu links
+        let menuLinks = document.querySelectorAll(".nav-link");
+        menuLinks.forEach((link) => {
+          link.classList.remove("underline_link");
+          link.style.color = "";
+        });
+        // Add the underline_link class to the clicked menu link
+        let menu = event.target;
+        menu.style.color = "#55e6f3";
+        menu.classList.add("underline_link");
+      }
+      window.onload = function () {
+        let homeLink = document.querySelector(".nav-link[href='#home']");
+        homeLink.style.color = "#55e6f3";
+        homeLink.classList.add("underline_link");
+      };
+    </script>
+  </body>
+</html>
